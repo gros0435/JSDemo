@@ -1,0 +1,65 @@
+.radial-gradient {
+    position:fixed;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    z-index: -10;
+
+    /*Fallback if gradeints don't work */
+    background: #9b59b6;
+    /*Linear gradient... */
+    background:
+            radial-gradient(
+                    at center, #3498db, #9b59b6
+            );
+}
+
+#box2 {
+    margin: 1000px 0px;
+    width: 100%;
+    height: 1024px;
+    z-index: 10000;
+}
+
+body{
+    background-color: #000000;
+    padding: 0px;
+    margin: 0px;
+    color: black;
+}
+
+#gradient
+{
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    box-shadow: inset 0 0 200px hsla(0,0%,0%,.4);
+
+}
+
+
+
+
+
+
+
+h1 {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    font-family: 'Croissant One', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 2.5em;
+    line-height: 1.25em;
+    color: #2d2d2d;
+}
+h1 span {
+    display: inline-block;
+    border-top: 1px solid #2d2d2d;
+    border-bottom: 1px solid #2d2d2d;
+    padding: .5em .6em;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="x.css"/>
+    <script src="x.js" defer></script>
+</head>
+<body>
+<div id="box1">
+<div class="radial-gradient" style="background: radial-gradient(at 85% 0%, rgb(52, 152, 219), rgb(155, 89, 182));">
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script id="rendered-js">
+    $(document).mousemove(function (event) {
+        windowWidth = $(window).width();
+        windowHeight = $(window).height();
+
+        mouseXpercentage = Math.round(event.pageX / windowWidth * 100);
+        mouseYpercentage = Math.round(event.pageY / windowHeight * 100);
+
+        $('.radial-gradient').css('background', 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, #3498db, #9b59b6)');
+    });
+    //# sourceURL=pen.js
+</script>
+</div>
+</div>
+
+<div id="box2">
+
+    <div id="gradient">
+
+    <h1>Java Script Element 2</h1>
+    </div>
+
+</div>
+
+</body>
+</html>
